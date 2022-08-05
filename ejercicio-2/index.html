@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container mt-2">
+
+        <h2 class="text-center">Presupuesto Personal</h2>
+        <!-- Ingreso inicial -->
+        <div class="row justify-content-center mt-3">
+
+            <div class="col-8 col-md-4">
+                <input type="number" class="form-control" id="pres-inicial" placeholder="Indique su ingreso inicial">
+            </div>
+            
+        </div>
+            <!-- Mensaje -->
+        <div class="text-center row justify-content-center mt-3">
+
+            <div class="alert alert-light col-8 col-md-7"  id="" role="alert">
+                Debe repartir su ingreso inicial en las siguientes categorias, el mismo no debe superar el 100% entre las 3.
+            </div>  
+    
+         </div>
+
+            <!-- Gastos necesarios -->
+        <div class="row justify-content-center mt-3">
+
+            <label for="g-necesarios" class="col-3 col-form-label">Gastos necesarios:     
+            </label>
+            <div class="col-8 col-md-4">
+                <input type="number" required class="form-control" id="g-necesarios" placeholder="Ej. 50">
+            </div>
+            
+        </div>
+            <!-- Gastos opcionales -->
+        <div class="row justify-content-center mt-3">
+
+            <label for="g-opcionales" class="col-3 col-form-label">Gastos opcionales:     
+            </label>
+            <div class="col-8 col-md-4">
+                <input type="number" required class="form-control" id="g-opcionales" placeholder="Ej. 25" >
+            </div>
+
+        </div>
+
+            <!-- Ahorro e inversión -->
+        <div class="row justify-content-center mt-3">
+
+            <label for="ahorro-inversion" class="col-3 col-form-label">Ahorro e inversión:    
+            </label>
+            <div class="col-8 col-md-4">
+                <input type="number" class="form-control" id="ahorro-inversion" placeholder="Ej. 25">
+            </div>
+            
+        </div>
+
+            <!-- Botón Calcular -->
+        <div class="text-center row justify-content-center mt-3">
+
+            <div class="col-8 col-md-4">
+                <button class="btn btn-primary col-12 hg-10" id="btn-calcular">Calcular</button>
+            </div>
+            
+        </div>
+            <!-- Muestro el resultado -->
+       <div class="text-center row justify-content-center mt-3">
+
+        <div class="alert alert-info col-8 col-md-7"  id="presupuesto" role="alert">
+            Aquí se mostrará la distribución de sus ingresos para cada categoria.
+        </div>  
+
+        </div>
+
+    </div>
+
+    <script src="app-pres-js/mod_15_ejerc2.js"></script>
+       <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
